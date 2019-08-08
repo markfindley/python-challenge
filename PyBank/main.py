@@ -1,27 +1,9 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[ ]:
 
 
-# Pseudo-code:
-    # Open the budget data file.
-    # Get the first record to get to the second row.
-    # Iterate through all the rows collecting:
-        # Count of the number of months in the dataset.
-        # Aggregate of the total profits and losses.
-        # Aggregate of the difference between each month.
-        # Save the largest month difference in profits.
-        # Save the largest month difference in losses.  
-    # When done iterating:
-        # Determine the average of the aggregation of the differences between each month.
-        # Print to Jupyter, python/gitbash and a new text file:
-            # Total months.
-            # Total profits and losses.
-            # Average change from month to month.
-            # Largest month difference in profits.
-            # Largest month difference in losses.
-            
 import os
 import csv
 
@@ -99,12 +81,6 @@ text_file.write(f"Greatest Increase in Profits: {greatest_profit_month_name} (${
 text_file.write(f"Greatest Decrease in Profits: {greatest_loss_month_name} (${greatest_loss_month})" + '\n')
 text_file.close()
    
-
-
-# In[ ]:
-
-
-
 
 
 # In[ ]:
